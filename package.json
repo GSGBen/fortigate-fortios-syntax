@@ -2,12 +2,12 @@
     "name": "fortigate-fortios-syntax",
     "displayName": "Fortigate FortiOS Syntax",
     "description": "Fortigate syntax highlighting, converted from the Atom language package.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "GSGBen",
     "icon": "images/fortinet-social-icon.jpg",
     "repository": "https://github.com/GSGBen/fortigate-fortios-syntax",
     "engines": {
-        "vscode": "^1.21.0"
+        "vscode": "^1.5.0"
     },
     "categories": [
         "Languages"
