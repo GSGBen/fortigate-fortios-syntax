@@ -1,0 +1,27 @@
+{
+    "name": "fortigate-fortios-syntax",
+    "displayName": "Fortigate FortiOS Syntax",
+    "description": "Fortigate syntax highlighting, converted from the Atom language package.",
+    "version": "1.0.0",
+    "publisher": "GSGBen",
+	"icon": "images/fortinet-social-icon.jpg",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fortigate",
+            "aliases": ["Fortigate", "fortigate"],
+            "extensions": [".conf"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fortigate",
+            "scopeName": "source.fortigate",
+            "path": "./syntaxes/fortigate.tmLanguage.json"
+        }]
+    }
+}

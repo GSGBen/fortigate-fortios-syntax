@@ -1,0 +1,62 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Fortigate",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.fortigate",
+				"match": "\\b(if|while|for|return)\\b"
+			},
+			{
+				"match": "(?<!\\w)@?(firewall|system|router|vpn)\\b",
+				"name": "inline-block highlight-error"
+			},
+			{
+				"match": "(?<!\\w)@?(config |end)\\b",
+				"name": "entity.name.function"
+			},
+			{
+				"match": "(?<!\\w)@?(global|policy|interface|user|service|local|dns)\\b",
+				"name": "string"
+			},
+			{
+				"match": "(?<!\\w)@?(edit|next)\\b",
+				"name": "entity.name.tag"
+			},
+			{
+				"match": "(?<!\\w)@?(set|enable|disable)\\b",
+				"name": "support.constant"
+			},
+			{
+				"match": "(?<!\\w)@?(admin|test)\\b",
+				"name": "inline-block highlight-warning"
+			},
+			{
+				"match": "(#.*)",
+				"name": "comment.line"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.fortigate",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.fortigate",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.fortigate"
+}
+
+
