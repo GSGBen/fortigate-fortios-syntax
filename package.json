@@ -4,7 +4,8 @@
     "description": "Fortigate syntax highlighting, converted from the Atom language package.",
     "version": "1.0.0",
     "publisher": "GSGBen",
-	"icon": "images/fortinet-social-icon.jpg",
+    "icon": "images/fortinet-social-icon.jpg",
+    "repository": "https://github.com/GSGBen/fortigate-fortios-syntax",
     "engines": {
         "vscode": "^1.21.0"
     },
